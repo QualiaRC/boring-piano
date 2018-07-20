@@ -6,22 +6,26 @@ body {
 h1 {
 	text-align: center;
 }
-a{
+a {
 	color: #999;
 	text-decoration: none;
 }
-a:hover{
+a:hover {
 	text-decoration: underline;
 }
-
-.unselectable{
-	-moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+hr.gradient {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+	width: 364px;
 }
-
+.unselectable {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 .piano {
 	font-size: 0;
 	margin: auto;
@@ -50,7 +54,7 @@ a:hover{
 }
 .white-key {
 	position: relative;
-	display:inline-block;
+	display: inline-block;
 	background-color: white;
 	width: 50px;
 	height: 150px;
@@ -58,14 +62,14 @@ a:hover{
 	transition: all 0.2s;
 }
 .white-key:hover {
-	background-color: lightgray;
+	background-color: #aaaaaa;
 }
-.white-key:active {
+.white-key:active, .white-key.active {
 	background-color: #999999;
 }
 .black-key {
 	position: relative;
-	display:inline-block;
+	display: inline-block;
 	background-color: black;
 	width: 30px;
 	height: 120px;
@@ -75,10 +79,14 @@ a:hover{
 .black-key:hover {
 	background-color: #444444;
 }
-.black-key:active {
-	background-color: #222222;
+.black-key:active, .black-key.active {
+	background-color: #333333;
+}
+.instructions {
+	margin-top: 30px;
+	text-align: center;
 }
 .footer {
-	margin-top: 62px;
+	margin-top: 30px;
 	text-align: center;
 }
