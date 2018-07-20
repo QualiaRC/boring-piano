@@ -1,0 +1,84 @@
+body {
+	color: white;
+	background-color: #292b2c;
+	padding: 0;
+}
+h1 {
+	text-align: center;
+}
+a{
+	color: #999;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+.unselectable{
+	-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.piano {
+	font-size: 0;
+	margin: auto;
+	background: black;
+	height: 152px;
+	width: 364px;
+	padding: 5px;
+	border: 1px solid white;
+	white-space: nowrap;
+}
+.red-bar {
+	background-color: #9C0000;
+	position: absolute;
+	height: 2px;
+	width: 362px;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+.white-row {
+	position: absolute;
+	height: 0px;
+}
+.black-row {
+	position: absolute;
+	height: 0px;
+}
+.white-key {
+	position: relative;
+	display:inline-block;
+	background-color: white;
+	width: 50px;
+	height: 150px;
+	margin: 1px;
+	transition: all 0.2s;
+}
+.white-key:hover {
+	background-color: lightgray;
+}
+.white-key:active {
+	background-color: #999999;
+}
+.black-key {
+	position: relative;
+	display:inline-block;
+	background-color: black;
+	width: 30px;
+	height: 120px;
+	margin-top: 1px;
+	transition: all 0.2s;
+}
+.black-key:hover {
+	background-color: #444444;
+}
+.black-key:active {
+	background-color: #222222;
+}
+.footer {
+	margin-top: 62px;
+	text-align: center;
+}
